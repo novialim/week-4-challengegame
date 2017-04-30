@@ -1,0 +1,115 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+@font-face {
+  font-family: 'Star Jedi Hollow';
+  src: url('../fonts/Starjhol.ttf');
+
+  font-family: 'Anakin Mono';
+  src: url('../fonts/anakinmono.ttf');
+}
+
+html {
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-size: 100% 100%;
+}
+
+body{
+	font-family: 'Anakin Mono', sans-serif;
+	color: #FFF;
+	padding:20px;
+	line-height: 25px;
+}
+
+div {
+	 display: inline-block;
+}
+span {
+	 display: inline-block;
+}
+
+img {
+	cursor:pointer;
+}
+
+div [class^="characterDiv"] {
+	max-width:250px;
+	text-align: center;
+	margin:1px;
+	padding:1px 5px;
+	z-index: 999;
+	border: 3px solid olive;
+	background-color: #FFF;
+}
+
+#charRemaining [class^="characterDiv"]{
+	max-width:250px;
+	text-align: center;
+	margin:1px;
+	padding:1px 5px;
+	background-color: red;
+	border: 3px solid black; 
+}
+
+#charDefender {
+	height: 185px;
+}
+
+#charDefender [class^="characterDiv"]{
+	max-width:250px;
+	text-align: center;
+	margin:1px;
+	padding:1px 5px;
+	background-color: black;
+	border: 3px solid olive; 
+}
+
+#charDefender span {
+	max-width:250px;
+	text-align: center;
+	margin:1px;
+	padding:1px 5px;
+	color: #FFF;
+}
+
+div span{
+	color:#000;
+	margin:1px;
+	padding:1px;
+}
+
+#header {
+	font-family: 'Star Jedi Hollow', sans-serif;
+	font-size: 50px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#charStartPos img {
+	vertical-align: middle;
+}
+
+#placeholder img{
+	cursor:auto;
+}
+
+#enemiestxt {
+	color: red;
+}
+
+#attackerUpdate {
+	display: block;	
+}
+
+#restartBtn {
+	visibility: hidden;
+}
